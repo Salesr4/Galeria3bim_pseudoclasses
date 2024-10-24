@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a{ /*estilização dos links*/
+    text-decoration: none;
+    color: black;
+}
+.menu { /*estilizando itens da nav*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px; 
+    padding: 1%;
+}
+nav {
+    background-color: #798645;
+}
+.menu li:hover {
+    color: brown;
+}
+h3 {
+    padding: 1%;
+}
+form {
+    padding: 1%;
+}
+.login { /*formulário*/
+    background-color: #F2EED7;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+}
+ul {
+    list-style: none;
+}
+
+/* .titulo {
+    display: flex;
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+} */
+ h1{
+    display: flex;
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+ }
+.ajuda{/*Ul das imagens*/
+    display: flex;
+    padding-left: 5%;
+}
+
+.form input {
+    resize: none;
+    outline: none;
+}
+.entrada:focus { /*borda na caixa*/
+    border-color: red;
+}
+.butao:active{
+    background-color: #626F47;
+}
+.check:checked + label {
+    color: green;
+}
+.imagens {
+    background-color: #FEFAE0;
+    display: flex;
+    
+}
+.imagens li img {
+    padding: 5%;
+    width: 400px;
+    height: 230px;
+    /* object-fit: cover; */
+}
+.imagens li:nth-child(odd) img {
+    background-color: #CBD2A4;
+    padding: 10px;
+    border-radius: 5px;
+}
+.texto {
+    padding: 10%;
+    background-color: #FEFAE0;
+    display: flex;
+}
+.texto li{
+    padding: 2%;
+}
+.texto li:first-child{
+    background-color:#F2EED7;
+}
+.texto li:last-child{
+    background-color:#CBD2A4;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+.saibamais {
+    display: flex;
+    justify-content: center;
+    background-color: #626F47;
+    padding: 2%;
+}
+.botao:active{
+    width: 40px;
+    height: 10px;
+}
+.loc{
+    padding: 2%;
+    width: 400px;
+    height: 450px;
+}
+.paragrafos p:not(.important){
+    background-color: #CBD2A4;
+}
+.paragrafos{
+    width: 100%;
+    display: flex;
+    background-color: #FEFAE0;
+    justify-content: center;
+}
+.direcionamento{   /* parágrafo sem classe .important com frase para direcionar o usuário para entrar na outra página*/
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+.important{
+    justify-content: center;
+    display: flex;
+}
+.paragrafo1{
+    padding: 1%;
+    background-color: #FEFAE0;
+}
+.locursos{ /*foto com os habitats de ursos pelo mundo*/
+    justify-content: center;
+    display: flex;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+.ulparagrafos{
+    width: 100%;
+}
+@media screen and (max-width: 600px){ /*Responsividade*/
+    .fotos img{
+      width: calc(100% - 30%);
+    }
+  }
